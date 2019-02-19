@@ -9,7 +9,7 @@ export let queryById = (id: string, queryTransaction?: Sequelize.Transaction): B
 		where: <Sequelize.WhereOptions<ProductAttributes>>{ id: id }
 	});
 };
-
+//test
 export let queryByLookupCode = (lookupCode: string, queryTransaction?: Sequelize.Transaction): Bluebird<ProductInstance | null> => {
 	return ProductEntity.findOne(<Sequelize.FindOptions<ProductAttributes>>{
 		transaction: queryTransaction,

@@ -19,8 +19,7 @@ export let queryProducts = (req: restify.Request, res: restify.Response, next: r
 		}, (error: any) => {
 			res.send(
 				(error.status || 500),
-				(error.message || ErrorCodeLookup.EC2001));
-
+				(error.message || ErrorCodeLookup.EC2001)); 
 			return next();
 		});
 };
